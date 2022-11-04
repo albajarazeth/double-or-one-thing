@@ -38,10 +38,8 @@ function solve(input){
         result.push(el[i]);
         }
         if(el[i] == el[i+1])
-        //result.push(el[i]);
-          //if(el[i]<el[i+2]){
           result.push(el[i]);
-          //}
+      
     };
     counter++;
     
@@ -61,11 +59,6 @@ function testCases(data){
   
 };
 
-//we have to pass in parsed data to solve
-/*
-  const testCases = parseInput(input);
-  testCases.forEach(double_or_one_thing);
-*/
 
 
 rl.on('line', input => data.push(input)).on('close', () => testCases(data));
